@@ -17,8 +17,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
 
-        let viewController = ViewController()
-        window.rootViewController = viewController
+        let cardModule = CardAssembly()
+        let rootView = cardModule.assemble()
+        
+        window.rootViewController = rootView
 
         self.window = window
         window.makeKeyAndVisible()

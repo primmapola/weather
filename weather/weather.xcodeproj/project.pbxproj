@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		CEB5772B2BB045C900A580C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5772A2BB045C900A580C6 /* AppDelegate.swift */; };
 		CEB5772D2BB045C900A580C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5772C2BB045C900A580C6 /* SceneDelegate.swift */; };
-		CEB5772F2BB045C900A580C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5772E2BB045C900A580C6 /* ViewController.swift */; };
 		CEB577342BB045CB00A580C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB577332BB045CB00A580C6 /* Assets.xcassets */; };
 		CEB577372BB045CB00A580C6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEB577362BB045CB00A580C6 /* Base */; };
+		CEB577422BB04E9300A580C6 /* CardAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577412BB04E9300A580C6 /* CardAssembly.swift */; };
+		CEB577442BB04EAC00A580C6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577432BB04EAC00A580C6 /* CardView.swift */; };
+		CEB577462BB04EB500A580C6 /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577452BB04EB500A580C6 /* CardPresenter.swift */; };
+		CEB577482BB04EC200A580C6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577472BB04EC200A580C6 /* CardModel.swift */; };
+		CEB5774A2BB0580900A580C6 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577492BB0580900A580C6 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEB577272BB045C900A580C6 /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB5772A2BB045C900A580C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB5772C2BB045C900A580C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB5772E2BB045C900A580C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEB577332BB045CB00A580C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB577362BB045CB00A580C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB577382BB045CB00A580C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB577412BB04E9300A580C6 /* CardAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAssembly.swift; sourceTree = "<group>"; };
+		CEB577432BB04EAC00A580C6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CEB577452BB04EB500A580C6 /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
+		CEB577472BB04EC200A580C6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		CEB577492BB0580900A580C6 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB5773F2BB0461A00A580C6 /* Aplication */,
-				CEB5772E2BB045C900A580C6 /* ViewController.swift */,
+				CEB577402BB04DD700A580C6 /* Modules */,
 				CEB5773E2BB045FE00A580C6 /* Helpers */,
 				CEB577382BB045CB00A580C6 /* Info.plist */,
 			);
@@ -78,6 +86,58 @@
 				CEB5772C2BB045C900A580C6 /* SceneDelegate.swift */,
 			);
 			path = Aplication;
+			sourceTree = "<group>";
+		};
+		CEB577402BB04DD700A580C6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CEB5774F2BB05AD500A580C6 /* CardModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CEB5774B2BB05AA200A580C6 /* Assemble */ = {
+			isa = PBXGroup;
+			children = (
+				CEB577412BB04E9300A580C6 /* CardAssembly.swift */,
+			);
+			path = Assemble;
+			sourceTree = "<group>";
+		};
+		CEB5774C2BB05AAC00A580C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB577432BB04EAC00A580C6 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB5774D2BB05ABE00A580C6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEB577452BB04EB500A580C6 /* CardPresenter.swift */,
+				CEB577492BB0580900A580C6 /* Protocols.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEB5774E2BB05AC800A580C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB577472BB04EC200A580C6 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB5774F2BB05AD500A580C6 /* CardModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEB5774B2BB05AA200A580C6 /* Assemble */,
+				CEB5774C2BB05AAC00A580C6 /* View */,
+				CEB5774D2BB05ABE00A580C6 /* Presenter */,
+				CEB5774E2BB05AC800A580C6 /* Model */,
+			);
+			path = CardModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB5772F2BB045C900A580C6 /* ViewController.swift in Sources */,
 				CEB5772B2BB045C900A580C6 /* AppDelegate.swift in Sources */,
 				CEB5772D2BB045C900A580C6 /* SceneDelegate.swift in Sources */,
+				CEB5774A2BB0580900A580C6 /* Protocols.swift in Sources */,
+				CEB577442BB04EAC00A580C6 /* CardView.swift in Sources */,
+				CEB577422BB04E9300A580C6 /* CardAssembly.swift in Sources */,
+				CEB577462BB04EB500A580C6 /* CardPresenter.swift in Sources */,
+				CEB577482BB04EC200A580C6 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
