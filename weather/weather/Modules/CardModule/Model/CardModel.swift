@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct CardModel {
+    let city: String
+    
+    init(city: String) {
+        self.city = city
+    }
+}

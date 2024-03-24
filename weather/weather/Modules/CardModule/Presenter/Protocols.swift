@@ -14,7 +14,9 @@ protocol CardModuleOutput: AnyObject {
 }
 
 protocol CardViewInput: AnyObject {
+    func initWithCity(_ city: String)
 }
 
 protocol CardViewOutput: AnyObject {
+    func didLoadView()
 }

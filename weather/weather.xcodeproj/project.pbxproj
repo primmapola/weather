@@ -16,6 +16,9 @@
 		CEB577462BB04EB500A580C6 /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577452BB04EB500A580C6 /* CardPresenter.swift */; };
 		CEB577482BB04EC200A580C6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577472BB04EC200A580C6 /* CardModel.swift */; };
 		CEB5774A2BB0580900A580C6 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577492BB0580900A580C6 /* Protocols.swift */; };
+		CEB577522BB067AD00A580C6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577512BB067AD00A580C6 /* LocationService.swift */; };
+		CEB577542BB0760B00A580C6 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577532BB0760B00A580C6 /* WeatherService.swift */; };
+		CEB577562BB0770000A580C6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB577552BB0770000A580C6 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		CEB577452BB04EB500A580C6 /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
 		CEB577472BB04EC200A580C6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		CEB577492BB0580900A580C6 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CEB577512BB067AD00A580C6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		CEB577532BB0760B00A580C6 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		CEB577552BB0770000A580C6 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		CEB577402BB04DD700A580C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEB577502BB0679F00A580C6 /* Services */,
 				CEB5774F2BB05AD500A580C6 /* CardModule */,
 			);
 			path = Modules;
@@ -138,6 +145,16 @@
 				CEB5774E2BB05AC800A580C6 /* Model */,
 			);
 			path = CardModule;
+			sourceTree = "<group>";
+		};
+		CEB577502BB0679F00A580C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEB577512BB067AD00A580C6 /* LocationService.swift */,
+				CEB577532BB0760B00A580C6 /* WeatherService.swift */,
+				CEB577552BB0770000A580C6 /* Response.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB5772B2BB045C900A580C6 /* AppDelegate.swift in Sources */,
+				CEB577542BB0760B00A580C6 /* WeatherService.swift in Sources */,
 				CEB5772D2BB045C900A580C6 /* SceneDelegate.swift in Sources */,
+				CEB577522BB067AD00A580C6 /* LocationService.swift in Sources */,
+				CEB577562BB0770000A580C6 /* Response.swift in Sources */,
 				CEB5774A2BB0580900A580C6 /* Protocols.swift in Sources */,
 				CEB577442BB04EAC00A580C6 /* CardView.swift in Sources */,
 				CEB577422BB04E9300A580C6 /* CardAssembly.swift in Sources */,
